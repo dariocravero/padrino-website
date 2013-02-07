@@ -1,6 +1,6 @@
 module PadrinoWebsite
   class App < Padrino::Application
-  register SassInitializer
+    register SassInitializer
     register Padrino::Rendering
     register Padrino::Mailer
     register Padrino::Helpers
