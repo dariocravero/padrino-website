@@ -11,7 +11,7 @@
     %base{:href => :/}
 
     %link{:rel => 'shortcut icon', :href => '/favicon.ico'} 
-    -#= stylesheet_link_tag :application
+    = stylesheet_link_tag :style
     %title= @title || 'Padrino Website'
   %body
     = yield
