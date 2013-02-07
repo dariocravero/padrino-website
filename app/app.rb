@@ -7,5 +7,8 @@ module PadrinoWebsite
 
     enable :sessions
 
+    get :index do
+      render :index
+    end
   end
 end
