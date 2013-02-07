@@ -7,6 +7,16 @@ module PadrinoWebsite
 
     enable :sessions
 
+    # before do
+    #   @menu = [{
+    #     :label => "Guides",
+    #     :url => url_for(:guides)
+    #   }, {
+    #     :label => "Menu 2",
+    #     :url => '/menu/2' 
+    #   }]
+    # end
+
     get :index do
       render :index
     end
