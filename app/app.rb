@@ -10,5 +10,9 @@ module PadrinoWebsite
     get :index do
       render :index
     end
+
+    get :guides do
+      render :guides
+    end
   end
 end
