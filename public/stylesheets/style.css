@@ -1,5 +1,10 @@
 .header-nav-list {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  /*font-family: Futura */
+  font-family: "Oleo Script Swash Caps", cursive; }
   .header-nav-list .header-nav-list-logo {
     display: block; }
+
+.header-nav-list-item {
+  float: left; }

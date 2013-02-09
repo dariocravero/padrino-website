@@ -11,25 +11,25 @@
     %base{:href => :/}
 
     %link{:rel => 'shortcut icon', :href => '/favicon.ico'} 
-    = stylesheet_link_tag :style
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps', :style
     %title= @title || 'Padrino Website'
   %body
     %header
       %nav
-        %ul.header-nav-list
+        %ul.header-nav
           -# - @menu.each do |item|
           -#   %li= link_to item[:label], item[:url]
-          %li= link_to 'Guides', url_for(:guides)
-          %li= link_to "Menu 2", '/menu/2'
-          %li= link_to "Menu 3", '/menu/3'
-          %li= link_to "Menu 4", '/menu/4'
-          %li.header-nav-list-logo
+          %li.header-nav-item= link_to 'Guides', url_for(:guides)
+          %li.header-nav-item= link_to "Menu 2", '/menu/2'
+          %li.header-nav-item= link_to "Menu 3", '/menu/3'
+          %li.header-nav-item= link_to "Menu 4", '/menu/4'
+          %li.header-nav-item.header-nav-logo
             = link_to '/' do
               = image_tag "http://placehold.it/150x150&text=Padrino%20Logo"
-          %li= link_to "Menu 1", '/menu/1'
-          %li= link_to "Menu 2", '/menu/2'
-          %li= link_to "Menu 3", '/menu/3'
-          %li= link_to "Menu 4", '/menu/4'
+          %li.header-nav-item= link_to "Menu 1", '/menu/1'
+          %li.header-nav-item= link_to "Menu 2", '/menu/2'
+          %li.header-nav-item= link_to "Menu 3", '/menu/3'
+          %li.header-nav-item= link_to "Menu 4", '/menu/4'
 
       %h1 Padrino is a Ruby Framework with Class! ;) 
 
